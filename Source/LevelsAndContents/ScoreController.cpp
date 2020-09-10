@@ -12,6 +12,11 @@ AScoreController::AScoreController() :
 
 }
 
+int AScoreController::GetScore() const
+{
+	return score;
+}
+
 // Called when the game starts or when spawned
 void AScoreController::BeginPlay()
 {

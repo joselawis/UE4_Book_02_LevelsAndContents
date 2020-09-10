@@ -14,6 +14,10 @@ public:
 	// Sets default values for this actor's properties
 	AScoreController();
 
+	// Getter for the internal score
+	UFUNCTION(BlueprintCallable, Category = "Score")
+		int GetScore() const;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
